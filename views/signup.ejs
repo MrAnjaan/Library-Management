@@ -1,0 +1,85 @@
+<!-- Section: Design Block -->
+<section class="vh-100 ">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+        <div class="container">
+            <div class="row gx-lg-5 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="my-5 display-3 fw-bold ls-tight">
+                        The world's best <br />
+                        <span class="text-primary">Library</span>
+                    </h1>
+                    <p style="color: hsl(217, 10%, 50.8%)">
+                        Unlock a world of knowledge, inspiration, and discovery at your fingertips. Explore a treasure
+                        trove of books, digital resources, and community events designed to spark curiosity and fuel
+                        your passion for learning. Your journey begins here—welcome to our library!
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body py-5 px-md-5">
+                            <form action="/signup" method="post">
+                                <!-- 2 column grid layout with text inputs for the first and last names -->
+                                <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign Up</h3>
+                                <% if (data.error) { %>
+                                    <p class="text-danger mb-3"><%= data.error %></p>
+                                  <% } %>
+                                <div class="row mb-3 " >
+                                        <div data-mdb-input-init class="form-outline">
+                                            <input type="text" id="form3Example1" class="form-control" name="name" required/>
+                                            <label class="form-label" for="form3Example1">Name</label>
+                                        </div>
+                                    </div>
+                            
+
+                                <!-- Email input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="email" id="form3Example3" class="form-control" name="email"/>
+                                    <label class="form-label" for="form3Example3">Email address</label>
+                                </div>
+
+                                <!-- Password input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" id="form3Example4" class="form-control" name="password" required/>
+                                    <label class="form-label" for="form3Example4">Password</label>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                    class="btn btn-info btn-lg btn-block">
+                                    Sign up
+                                </button>
+                                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/login"
+                                    class="fw-bold  link-info"><u>Login here</u></a></p>
+
+                                <!-- Register buttons
+                  <div class="text-center">
+                    <p>or sign up with:</p>
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </button>
+  
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-google"></i>
+                    </button>
+  
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+  
+                    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div> -->
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->

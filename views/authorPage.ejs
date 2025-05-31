@@ -1,0 +1,60 @@
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+        .btn-action {
+            width: 200px;
+            margin: 10px;
+            padding: 15px 0;
+            font-size: 1.1rem;
+        }
+        .btn-icon {
+            margin-right: 8px;
+        }
+    </style>
+
+    <div class="container text-center">
+        <h1 class="mb-5">Author Management</h1>
+        
+        <div class="d-flex flex-wrap justify-content-center">
+            <!-- Add Author Button -->
+            <a href="/authors/add" class="btn btn-primary btn-action">
+                <i class="fa-solid fa-user-plus"></i>
+                Add Author
+            </a>
+            
+            <!-- Update Author Button -->
+            <a href="/authors/update" class="btn btn-warning btn-action">
+                <i class="fa-regular fa-pen-to-square"></i>
+                Update Author
+            </a>
+            
+            <!-- Delete Author Button -->
+            <a href="/authors/delete" class="btn btn-danger btn-action">
+                <i class="bi bi-person-x btn-icon"></i>
+                <i class="fa-solid fa-user-xmark"></i>
+                Delete Author
+            </a>
+            
+            <!-- Display Authors Button -->
+            <a href="/authors/display" class="btn btn-success btn-action">
+                <i class="bi bi-people btn-icon"></i>
+                Display Authors
+            </a>
+        </div>
+        
+        <!-- Back Button -->
+        <div class="mt-5">
+            <a href="/home" class="btn btn-secondary">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+
+

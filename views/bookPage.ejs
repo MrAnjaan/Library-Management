@@ -1,0 +1,56 @@
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .container {
+        max-width: 800px;
+        margin-top: 50px;
+    }
+
+    .btn-action {
+        width: 200px;
+        margin: 10px;
+        padding: 15px 0;
+        font-size: 1.1rem;
+    }
+
+    .btn-icon {
+        margin-right: 8px;
+    }
+</style>
+
+<div class="container text-center">
+    <h1 class="mb-5">Book Management</h1>
+
+    <div class="d-flex flex-wrap justify-content-center">
+        <!-- Add Book Button -->
+        <a href="/books/add" class="btn btn-primary btn-action">
+            <i class="fa-solid fa-circle-plus"></i>
+            Add Book
+        </a>
+
+        <!-- Update Book Button -->
+        <a href="/books/update" class="btn btn-warning btn-action">
+            <i class="fa-regular fa-pen-to-square"></i>
+            Update Book
+        </a>
+
+        <!-- Delete Book Button -->
+        <a href="/books/delete" class="btn btn-danger btn-action">
+            <i class="fa-solid fa-square-xmark"></i>
+            Delete Book
+        </a>
+
+        <!-- Display Books Button -->
+        <a href="/books/display" class="btn btn-success btn-action">
+            Display Books
+        </a>
+    </div>
+    <!-- Back Button -->
+    <div class="mt-5">
+        <a href="/home" class="btn btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<!-- Section: Design Block -->
+<section class="vh-100">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+        <div class="container">
+            <div class="row gx-lg-5 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="my-5 display-3 fw-bold ls-tight">
+                        Add New Author
+                    </h1>
+                </div>
+
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card">
+                        <div class="card-body py-5 px-md-5">
+                            <form action="/authors/add" method="post">
+                                <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Author Details</h3>
+                                <% if (data.error) { %>
+                                    <p class="text-danger mb-3"><%= data.error %></p>
+                                  <% } %>
+                                <div class="row mb-3">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <input type="text" id="authorName" class="form-control" name="name" required />
+                                        <label class="form-label" for="authorName">Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <textarea id="authorBio" class="form-control" name="bio" required></textarea>
+                                        <label class="form-label" for="authorBio">Biography</label>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div data-mdb-input-init class="form-outline">
+                                        <input type="text" id="authorNationality" class="form-control" name="nationality" required />
+                                        <label class="form-label" for="authorNationality">Nationality</label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-lg btn-block">
+                                    Add Author
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->

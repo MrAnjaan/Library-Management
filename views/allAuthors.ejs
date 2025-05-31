@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class=" d-flex justify-content-around mt-4 mb-3">
+        <h2>All Authors</h2>
+        <a href="/authors/add" class="btn btn-primary ">Add Author</a>
+
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Author Name</th>
+                <th scope="col">Bio</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Date</th>
+                <!-- <th scope="col">Action</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <% if (authors.length> 0) { %>
+                <% authors.forEach(author=> { %>
+                    <tr>
+                        <td>
+                            <%= author.name %>
+                        </td>
+                        <td>
+                            <%= author.bio %>
+                        </td>
+                        <td>
+                            <%= author.nationality %>
+                        </td>
+                        <td>
+                            <%= author.createdAt.toDateString() %>
+                        </td>
+                        <!-- <td><a href="/authors/update" class="btn btn-warning">Edit Author</a>
+                        <td>
+
+                            <form action="/authors/delete?id=<%= author.id %>" method="delete">
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </form>
+                        </td> -->
+                    </tr>
+                    <% }) %>
+                        <% } else { %>
+                            <tr>
+                                <td colspan="4">No authors found.</td>
+                            </tr>
+                            <% } %>
+        </tbody>
+    </table>
+</div>
